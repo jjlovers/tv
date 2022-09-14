@@ -1,0 +1,46 @@
+.fit {
+  @include fit;
+}
+
+.abs-center {
+  @include absolute-center;
+}
+
+.rounded-full {
+  @include radius(200px);
+}
+
+.rounded-normal {
+  @include radius(10px);
+}
+
+.rounded-small {
+  @include radius(4px);
+}
+
+.no-select {
+  @include no-select;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.single-line {
+  @include single-line;
+}
+
+.trans-color {
+  will-change: color, background-color, border-color;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.trans-bgcolor {
+  will-change: background-color;
+  transition: background-color 0.2s;
+}
+
+.trans-fgcolor {
+  will-change: color;
+  transition: color 0.2s;
+}

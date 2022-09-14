@@ -1,0 +1,75 @@
+/**
+ * Horizontal Alignment
+ * *********************************/
+.text-center {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-md-center {
+  @media #{$md-down} {
+    text-align: center;
+  }
+}
+
+.text-sm-center {
+  @media #{$sm-down} {
+    text-align: center;
+  }
+}
+
+.text-xs-center {
+  @media #{$xs-down} {
+    text-align: center;
+  }
+}
+
+/**
+ * Decorations
+ * *********************************/
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.text-middleline {
+  text-decoration: line-through
+}
+
+/**
+ * Float
+ * *********************************/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/**
+ * Vertical Alignment
+ * *********************************/
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-top {
+  vertical-align: top;
+}

@@ -1,0 +1,127 @@
+/**
+ * Transition & Animations
+ * *********************************/
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  00% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes attention {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.03)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes indeterminate {
+  00% {
+    right: -35%;
+    left: 100%;
+  }
+
+  60% {
+    right: 100%;
+    left: -90%;
+  }
+
+  100% {
+    right: 100%;
+    left: -90%;
+  }
+}
+
+@keyframes indeterminate-short {
+  00% {
+    right: -200%;
+    left: 100%;
+  }
+
+  60% {
+    right: 107%;
+    left: -8%;
+  }
+
+  100% {
+    right: 107%;
+    left: -8%;
+  }
+}
+
+/**
+ * Page Transitions
+ * *********************************/
+// fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.22s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// expand
+.expand-enter-active,
+.expand-leave-active {
+  transition: height 0.3s, opacity 0.3s;
+  overflow: hidden;
+}
+
+.expand-enter,
+.expand-leave-to {
+  height: 0;
+  opacity: 0;
+}
+
+// menu
+.menu-enter-active {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform-origin: left top;
+}
+
+.menu-enter,
+.menu-leave-to {
+  transform: scale(0.3);
+  opacity: 0;
+}
+
+
+// snack
+.snack-enter-active,
+.snack-leave-active {
+  transition: transform .4s cubic-bezier(.25, .8, .25, 1), opacity .4s cubic-bezier(.25, .8, .25, 1);
+}
+
+.snack-enter,
+.snack-leave-to {
+  opacity: 0;
+  transform: scale(0.4) translateY(0);
+}

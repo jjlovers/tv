@@ -1,0 +1,200 @@
+/**
+ * Core
+ * *********************************/
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  direction: rtl;
+  position: relative;
+  margin: 0;
+  min-width: 320px;
+  height: 100%;
+  line-height: 1.5;
+  font-family: IRANYekan, 'Segoe UI', tahoma, Verdana, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: $page-background;
+  color: $page-foreground;
+  overflow: hidden;
+}
+
+main {
+  min-height: 500px;
+
+  @media #{$sm-down} {
+    min-width: 300px;
+  }
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+/**
+ * Layout
+ * *********************************/
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+
+/**
+ * Responsive LIstener
+ * *********************************/
+#app__breakpoint {
+  content: 'xl';
+
+  @media #{$lg-down} {
+    content: 'lg';
+  }
+
+  @media #{$md-down} {
+    content: 'md';
+  }
+
+  @media #{$sm-down} {
+    content: 'sm';
+  }
+
+  @media #{$xs-down} {
+    content: 'xs';
+  }
+}
+
+/**
+ * Reset
+ * *********************************/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+figure {
+  margin: 0;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+address {
+  font-style: normal;
+}
+
+p,
+pre {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  font-weight: inherit;
+}
+
+label,
+span {
+  font-weight: inherit;
+}
+
+/**
+ * Form Elements
+ * *********************************/
+ input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  -webkit-tap-highlight-color: $transparent;
+}
+
+/**
+ * Links
+ * *********************************/
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+}

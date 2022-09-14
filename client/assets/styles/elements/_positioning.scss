@@ -1,0 +1,18 @@
+/**
+ * Positioning
+ * *********************************/
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-sticky {
+  @media #{$md-up} {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+/**
+ * Vertical gradients
+ * *********************************/
+@mixin gradient-2point ($startColor: #eee, $endColor: white) {
+  background-color: $startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background: -webkit-linear-gradient(top, $startColor, $endColor);
+  background: -moz-linear-gradient(top, $startColor, $endColor);
+  background: -ms-linear-gradient(top, $startColor, $endColor);
+  background: -o-linear-gradient(top, $startColor, $endColor);
+}
+
+@mixin gradient-3point ($startColor: #eee, $middleColor: white, $endColor: #eee) {
+  background-color: $startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from($startColor), color-stop($middleColor), to($endColor));
+  background: -webkit-linear-gradient(top, $startColor, $middleColor, $endColor);
+  background: -moz-linear-gradient(top, $startColor, $middleColor, $endColor);
+  background: -ms-linear-gradient(top, $startColor, $middleColor, $endColor);
+  background: -o-linear-gradient(top, $startColor, $middleColor, $endColor);
+}
+
+
+@mixin gradient-2point-horizontal ($startColor, $endColor) {
+  background: $endColor;
+  background: -moz-linear-gradient(100deg, $startColor 0%, $endColor 100%);
+  background: -webkit-linear-gradient(100deg, $startColor 0%, $endColor 100%);
+  background: linear-gradient(100deg, $startColor 0%, $endColor 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$startColor}", endColorstr="#{$endColor}", GradientType=1);
+}

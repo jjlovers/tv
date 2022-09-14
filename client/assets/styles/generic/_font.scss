@@ -1,0 +1,52 @@
+/**
+ * Body Font
+ * *********************************/
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/eot/iranyekanRegular.eot');
+  src: url('/fonts/eot/iranyekanRegular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/woff/iranyekanRegular.woff') format('woff'),
+    url('/fonts/ttf/iranyekanRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/eot/iranyekanMedium.eot');
+  src: url('/fonts/eot/iranyekanMedium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/woff/iranyekanMedium.woff') format('woff'),
+    url('/fonts/ttf/iranyekanMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/eot/iranyekanBold.eot');
+  src: url('/fonts/eot/iranyekanBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/woff/iranyekanBold.woff') format('woff'),
+    url('/fonts/ttf/iranyekanBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/eot/iranyekanExtrabold.eot');
+  src: url('/fonts/eot/iranyekanExtrabold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/woff/iranyekanExtrabold.woff') format('woff'),
+    url('/fonts/ttf/iranyekanExtrabold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/eot/iranyekanBlack.eot');
+  src: url('/fonts/eot/iranyekanBlack.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/woff/iranyekanBlack.woff') format('woff'),
+    url('/fonts/ttf/iranyekanBlack.ttf') format('truetype');
+}

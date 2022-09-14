@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./client/*"],
+      "@/*": ["./client/*"],
+      "~~/*": ["./client/*"],
+      "@shared/*": ["./client/components/shared/*"],
+      "@kit/*": ["./client/components/kit/*"],
+      "@directive/*": ["./client/assets/directives/*"],
+      "@page/*": ["./page/*"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}

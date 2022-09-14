@@ -1,0 +1,43 @@
+/**
+ * Display
+ * *********************************/
+.d-iblock {
+  display: inline-block;
+}
+
+.d-table {
+  display: table;
+  width: 100%;
+}
+
+.d-row {
+  display: table-row;
+}
+
+.d-cell {
+  display: table-cell;
+  vertical-align: middle;
+
+  &--fill {
+    width: 100%;
+  }
+}
+
+.cell--divider {
+  border-bottom: 1px solid $divider-color;
+}
+
+/**
+ * Responsive display
+ * *********************************/
+.sm-show {
+  @media #{$sm-up} {
+    display: none !important;
+  }
+}
+
+.sm-hide {
+  @media #{$sm-down} {
+    display: none !important;
+  }
+}

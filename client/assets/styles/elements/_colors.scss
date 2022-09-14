@@ -1,0 +1,117 @@
+/**
+ * Solid background
+ * *********************************/
+.bg-primary {
+  background-color: $color-primary !important;
+
+  &--light-1 {
+    background-color: $color-primary--light-1 !important;
+  }
+
+  &--light-2 {
+    background-color: $color-primary--light-2 !important;
+  }
+
+  &--dark-1 {
+    background-color: $color-primary--dark-1 !important;
+  }
+
+  &--dark-2 {
+    background-color: $color-primary--dark-2 !important;
+  }
+}
+
+.bg-secondary {
+  background-color: $color-secondary !important;
+
+  &--light-1 {
+    background-color: $color-secondary--light-1 !important;
+  }
+
+  &--light-2 {
+    background-color: $color-secondary--light-2 !important;
+  }
+
+  &--dark-1 {
+    background-color: $color-secondary--dark-1 !important;
+  }
+
+  &--dark-2 {
+    background-color: $color-secondary--dark-2 !important;
+  }
+}
+
+.bg-success {
+  background-color: $color-alt-green !important;
+}
+
+.bg-warning {
+  background-color: $color-alt-orange !important;
+}
+
+.bg-info {
+  background-color: $color-alt-blue !important;
+}
+
+.bg-error {
+  background-color: $color-alt-red !important;
+}
+
+/**
+ * Solid foreground
+ * *********************************/
+.fg-primary {
+  color: $color-primary !important;
+
+  &--light-1 {
+    color: $color-primary--light-1 !important;
+  }
+
+  &--light-2 {
+    color: $color-primary--light-2 !important;
+  }
+
+  &--dark-1 {
+    color: $color-primary--dark-1 !important;
+  }
+
+  &--dark-2 {
+    color: $color-primary--dark-2 !important;
+  }
+}
+
+.fg-secondary {
+  color: $color-secondary !important;
+
+  &--light-1 {
+    color: $color-secondary--light-1 !important;
+  }
+
+  &--light-2 {
+    color: $color-secondary--light-2 !important;
+  }
+
+  &--dark-1 {
+    color: $color-secondary--dark-1 !important;
+  }
+
+  &--dark-2 {
+    color: $color-secondary--dark-2 !important;
+  }
+}
+
+.fg-success {
+  color: $color-alt-green !important;
+}
+
+.fg-warning {
+  color: $color-alt-orange !important;
+}
+
+.fg-info {
+  color: $color-alt-blue !important;
+}
+
+.fg-error {
+  color: $color-alt-red !important;
+}

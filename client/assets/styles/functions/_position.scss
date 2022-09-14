@@ -1,0 +1,24 @@
+@function opposite-position($positions) {
+  $opposite-positions: ();
+  $position-map: (
+    'top':    'bottom',
+    'right':  'left',
+    'bottom': 'top',
+    'left':   'right',
+    'center': 'center',
+    'ltr':    'rtl',
+    'rtl':    'ltr'
+  );
+
+  @each $position in $positions {
+    $position: to-lower-case($position);
+
+    @if map-has-key($position-map, $position) {
+      $opposite-positions: append($opposite-positions, unquote(map-get($position-map, $position)));
+    } @else {
+      @warn "No opposite position can be found for `#{$position}`. position omitted.";
+    }
+  }
+
+  @return $opposite-positions;
+}

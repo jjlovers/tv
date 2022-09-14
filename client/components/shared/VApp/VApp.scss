@@ -1,0 +1,8 @@
+/**
+ * App
+ * *********************************/
+.v-app {
+  height: 100%;
+  background-color: $page-background;
+  @include scrollbar;
+}

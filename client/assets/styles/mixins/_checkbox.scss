@@ -1,0 +1,14 @@
+@mixin checkbox-maker($name, $color) {
+  .checkbox--#{$name} {
+    > .checkbox__label > .checkbox__control:checked + .checkbox__box {
+      background-color: $color;
+      box-shadow: 0 0 0 1px $color;
+    }
+
+    &.checkbox--large {
+      > .checkbox__label > .checkbox__control:checked + .checkbox__box {
+        box-shadow: 0 0 0 2px $color;
+      }
+    }
+  }
+}

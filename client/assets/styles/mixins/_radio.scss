@@ -1,0 +1,8 @@
+@mixin radio-maker($name, $color) {
+  .radio--#{$name} {
+    > .radio__label > .radio__control:checked + .radio__box {
+      border-color: $color;
+      background-color: $color;
+    }
+  }
+}

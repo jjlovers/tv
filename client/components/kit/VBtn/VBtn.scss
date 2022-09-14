@@ -1,0 +1,133 @@
+/**
+ * Button
+ * *********************************/
+.v-btn {
+  font-family: $font-family;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  transition: opacity 0.3s, background-color 0.3s, filter 0.3s, 0.3s box-shadow;
+  @include radius(4px);
+  @include no-select;
+
+  +.v-btn {
+    margin-right: 5px;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__text {
+    position: relative;
+  }
+
+  &__icon {
+    float: right;
+    margin-left: 10px;
+
+    &--left {
+      float: left;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+  }
+
+  &--small {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    min-width: 70px;
+
+    >.v-btn__content {
+      padding: 8px 10px;
+    }
+
+    .v-btn__icon {
+      font-size: 14px;
+    }
+
+    &.v-btn--wide {
+      min-width: 110px;
+    }
+  }
+
+  &--medium {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    min-width: 100px;
+
+    >.v-btn__content {
+      padding: 10px 18px;
+    }
+
+    .v-btn__icon {
+      font-size: 16px;
+    }
+
+    &.v-btn--wide {
+      min-width: 160px;
+    }
+
+  }
+
+  &--large {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    min-width: 120px;
+
+    >.v-btn__content {
+      padding: 12px 20px;
+    }
+
+    .v-btn__icon {
+      font-size: 20px;
+    }
+
+    &.v-btn--wide {
+      min-width: 180px;
+    }
+  }
+
+  &--block {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+  }
+
+  &--disable {
+    pointer-events: none;
+    color: #b2b2b2 !important;
+    background-color: #dcdcdc !important;
+    box-shadow: none !important;
+  }
+
+  &--freeze {
+    cursor: not-allowed;
+    @include no-select;
+  }
+
+  &--outline {
+    >.v-btn__icon {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  @include btn-maker(primary, $color-primary, $color-primary--dark-1, #fff);
+  @include btn-maker(secondary, $color-secondary, $color-secondary--dark-1, #fff);
+  @include btn-maker(success, $color-alt-green-light, $color-alt-green, #fff);
+  @include btn-maker(info, $color-alt-blue-light, $color-alt-blue, #fff);
+  @include btn-maker(warning, $color-alt-orange-light, $color-alt-orange, #fff);
+  @include btn-maker(error, $color-alt-red-light, $color-alt-red, #fff);
+  @include btn-maker(grey, #dddddd, #767676, #666);
+
+}
