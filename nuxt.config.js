@@ -1,6 +1,6 @@
 const path = require('path')
 
-const API_URL = 'https://webmoviebox.xyz/api/'
+const API_URL = 'https://webmoviebox.xyz/'
 
 const config = {
   // Global page headers
@@ -76,11 +76,7 @@ const config = {
    ** Axion configuration
    */
   axios: {
-    proxy: true
-  },
-
-  proxy: {
-    '/api/': { target: API_URL, pathRewrite: { '^/api/': '' }, changeOrigin: true }
+    baseUrl: API_URL
   },
 
   /*
